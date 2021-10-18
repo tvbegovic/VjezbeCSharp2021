@@ -37,6 +37,7 @@ namespace DjeliteljiDoPetlja
                             suma += i;  //kraće
                         }
                     }
+                    
 
                     Console.WriteLine(
                     "Suma brojeva od 1 do {0} koji su djeljivi sa 3 ili 5 je {1:N0}",
