@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Djelitelji", "Djelitelji\Dj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DjeliteljiDoPetlja", "DjeliteljiDoPetlja\DjeliteljiDoPetlja.csproj", "{5CDB7003-C8CE-4818-9094-10D1806CA2EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IzracunKamata", "IzracunKamata\IzracunKamata.csproj", "{055B2987-19DF-4033-8133-AA2CDB23680D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IzracunKamata", "IzracunKamata\IzracunKamata.csproj", "{055B2987-19DF-4033-8133-AA2CDB23680D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtplataKredita", "OtplataKredita\OtplataKredita.csproj", "{52534CDD-FC65-4FC3-B76A-52EEC470003B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{055B2987-19DF-4033-8133-AA2CDB23680D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{055B2987-19DF-4033-8133-AA2CDB23680D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{055B2987-19DF-4033-8133-AA2CDB23680D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52534CDD-FC65-4FC3-B76A-52EEC470003B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52534CDD-FC65-4FC3-B76A-52EEC470003B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52534CDD-FC65-4FC3-B76A-52EEC470003B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52534CDD-FC65-4FC3-B76A-52EEC470003B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

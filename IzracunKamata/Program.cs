@@ -41,14 +41,22 @@ namespace IzracunKamata
                         Console.WriteLine("Pogrešan format");
                         continue;
                     }
-                    if(stopa < 0 || stopa > 20)
+                    /*if(stopa < 0 || stopa > 20)
                     {
                         Console.WriteLine("Stopa je izvan raspona");
                         continue;
-                    }
-                    var kamata = IznosKamata(glavnica, stopa);
-                    Console.WriteLine("Za unesenu glavnicu {0:N2} i kamatnu stopu {1:N2} iznos kamata u jednom obračunskom razdoblju je {2:N2}.",
+                    }*/
+                    try
+                    {
+                        var kamata = IznosKamata(glavnica, stopa);
+                        Console.WriteLine("Za unesenu glavnicu {0:N2} i kamatnu stopu {1:N2} iznos kamata u jednom obračunskom razdoblju je {2:N2}.",
                         glavnica, stopa, kamata);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Pogreška: {0}", ex.Message);
+                    }
+                    
                 }
             } while (nastavi);
         }
