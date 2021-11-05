@@ -60,5 +60,19 @@ namespace ListaRijeciNet
                 AzurirajListBox();
             }
         }
+
+        private void btnDodajVise_Click(object sender, EventArgs e)
+        {
+            var textViseRijeci = txtViseRijeci.Text;
+            var splitRijeci = textViseRijeci.Split(' ');
+            rijeci.AddRange(splitRijeci);
+            AzurirajListBox();
+        }
+
+        private void btnOcisti_Click(object sender, EventArgs e)
+        {
+            rijeci.Clear();
+            AzurirajListBox();
+        }
     }
 }

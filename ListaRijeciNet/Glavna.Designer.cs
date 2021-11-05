@@ -30,13 +30,13 @@ namespace ListaRijeciNet
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtJednaRijec = new System.Windows.Forms.TextBox();
-            this.btnDodajNaKraj = new System.Windows.Forms.Button();
-            this.btnDodajNaPoziciju = new System.Windows.Forms.Button();
             this.txtPozicija = new System.Windows.Forms.TextBox();
+            this.btnDodajNaPoziciju = new System.Windows.Forms.Button();
+            this.btnDodajNaKraj = new System.Windows.Forms.Button();
+            this.txtJednaRijec = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtViseRijeci = new System.Windows.Forms.TextBox();
             this.btnDodajVise = new System.Windows.Forms.Button();
+            this.txtViseRijeci = new System.Windows.Forms.TextBox();
             this.lstPopis = new System.Windows.Forms.ListBox();
             this.btnUkloni = new System.Windows.Forms.Button();
             this.btnOcisti = new System.Windows.Forms.Button();
@@ -57,22 +57,12 @@ namespace ListaRijeciNet
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Jedna riječ";
             // 
-            // txtJednaRijec
+            // txtPozicija
             // 
-            this.txtJednaRijec.Location = new System.Drawing.Point(6, 19);
-            this.txtJednaRijec.Name = "txtJednaRijec";
-            this.txtJednaRijec.Size = new System.Drawing.Size(279, 20);
-            this.txtJednaRijec.TabIndex = 0;
-            // 
-            // btnDodajNaKraj
-            // 
-            this.btnDodajNaKraj.Location = new System.Drawing.Point(6, 50);
-            this.btnDodajNaKraj.Name = "btnDodajNaKraj";
-            this.btnDodajNaKraj.Size = new System.Drawing.Size(135, 23);
-            this.btnDodajNaKraj.TabIndex = 1;
-            this.btnDodajNaKraj.Text = "Dodaj riječ na kraj";
-            this.btnDodajNaKraj.UseVisualStyleBackColor = true;
-            this.btnDodajNaKraj.Click += new System.EventHandler(this.btnDodajNaKraj_Click);
+            this.txtPozicija.Location = new System.Drawing.Point(305, 52);
+            this.txtPozicija.Name = "txtPozicija";
+            this.txtPozicija.Size = new System.Drawing.Size(157, 20);
+            this.txtPozicija.TabIndex = 2;
             // 
             // btnDodajNaPoziciju
             // 
@@ -84,12 +74,22 @@ namespace ListaRijeciNet
             this.btnDodajNaPoziciju.UseVisualStyleBackColor = true;
             this.btnDodajNaPoziciju.Click += new System.EventHandler(this.btnDodajNaPoziciju_Click);
             // 
-            // txtPozicija
+            // btnDodajNaKraj
             // 
-            this.txtPozicija.Location = new System.Drawing.Point(305, 52);
-            this.txtPozicija.Name = "txtPozicija";
-            this.txtPozicija.Size = new System.Drawing.Size(157, 20);
-            this.txtPozicija.TabIndex = 2;
+            this.btnDodajNaKraj.Location = new System.Drawing.Point(6, 50);
+            this.btnDodajNaKraj.Name = "btnDodajNaKraj";
+            this.btnDodajNaKraj.Size = new System.Drawing.Size(135, 23);
+            this.btnDodajNaKraj.TabIndex = 1;
+            this.btnDodajNaKraj.Text = "Dodaj riječ na kraj";
+            this.btnDodajNaKraj.UseVisualStyleBackColor = true;
+            this.btnDodajNaKraj.Click += new System.EventHandler(this.btnDodajNaKraj_Click);
+            // 
+            // txtJednaRijec
+            // 
+            this.txtJednaRijec.Location = new System.Drawing.Point(6, 19);
+            this.txtJednaRijec.Name = "txtJednaRijec";
+            this.txtJednaRijec.Size = new System.Drawing.Size(279, 20);
+            this.txtJednaRijec.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -102,14 +102,6 @@ namespace ListaRijeciNet
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Više riječi";
             // 
-            // txtViseRijeci
-            // 
-            this.txtViseRijeci.Location = new System.Drawing.Point(6, 29);
-            this.txtViseRijeci.Multiline = true;
-            this.txtViseRijeci.Name = "txtViseRijeci";
-            this.txtViseRijeci.Size = new System.Drawing.Size(502, 77);
-            this.txtViseRijeci.TabIndex = 0;
-            // 
             // btnDodajVise
             // 
             this.btnDodajVise.Location = new System.Drawing.Point(540, 29);
@@ -118,6 +110,15 @@ namespace ListaRijeciNet
             this.btnDodajVise.TabIndex = 1;
             this.btnDodajVise.Text = "Dodaj";
             this.btnDodajVise.UseVisualStyleBackColor = true;
+            this.btnDodajVise.Click += new System.EventHandler(this.btnDodajVise_Click);
+            // 
+            // txtViseRijeci
+            // 
+            this.txtViseRijeci.Location = new System.Drawing.Point(6, 29);
+            this.txtViseRijeci.Multiline = true;
+            this.txtViseRijeci.Name = "txtViseRijeci";
+            this.txtViseRijeci.Size = new System.Drawing.Size(502, 77);
+            this.txtViseRijeci.TabIndex = 0;
             // 
             // lstPopis
             // 
@@ -145,6 +146,7 @@ namespace ListaRijeciNet
             this.btnOcisti.TabIndex = 3;
             this.btnOcisti.Text = "Isprazni listu";
             this.btnOcisti.UseVisualStyleBackColor = true;
+            this.btnOcisti.Click += new System.EventHandler(this.btnOcisti_Click);
             // 
             // Glavna
             // 
