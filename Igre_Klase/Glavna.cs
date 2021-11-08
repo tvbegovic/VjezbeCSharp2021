@@ -39,7 +39,19 @@ namespace Igre_Klase
                 return;
             }
             var igra = new Igra();
-           
+            try
+            {
+                igra.Naziv = naziv;
+                var a = igra.Naziv;
+                igra.UnesiPodatke(naziv, opis, vrsta, datumIzdavanja, cijena, izdavac);
+                MessageBox.Show("Podaci su uspješni uneseni", "Uspjeh", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Dogodila se pogreška. Tekst: {ex.Message}",
+                    "Pogreška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
