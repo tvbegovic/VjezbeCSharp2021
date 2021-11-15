@@ -43,6 +43,8 @@ namespace Igre_ListaObjekata
             this.txtNaziv = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvIgre = new System.Windows.Forms.DataGridView();
+            this.btnSpremi = new System.Windows.Forms.Button();
+            this.btnUcitaj = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIgre)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,11 +163,33 @@ namespace Igre_ListaObjekata
             this.dgvIgre.Size = new System.Drawing.Size(733, 226);
             this.dgvIgre.TabIndex = 26;
             // 
+            // btnSpremi
+            // 
+            this.btnSpremi.Location = new System.Drawing.Point(326, 149);
+            this.btnSpremi.Name = "btnSpremi";
+            this.btnSpremi.Size = new System.Drawing.Size(164, 28);
+            this.btnSpremi.TabIndex = 27;
+            this.btnSpremi.Text = "Spremi";
+            this.btnSpremi.UseVisualStyleBackColor = true;
+            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
+            // 
+            // btnUcitaj
+            // 
+            this.btnUcitaj.Location = new System.Drawing.Point(509, 149);
+            this.btnUcitaj.Name = "btnUcitaj";
+            this.btnUcitaj.Size = new System.Drawing.Size(164, 28);
+            this.btnUcitaj.TabIndex = 27;
+            this.btnUcitaj.Text = "Učitaj";
+            this.btnUcitaj.UseVisualStyleBackColor = true;
+            this.btnUcitaj.Click += new System.EventHandler(this.btnUcitaj_Click);
+            // 
             // Glavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUcitaj);
+            this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.dgvIgre);
             this.Controls.Add(this.btnUnesi);
             this.Controls.Add(this.txtIzdavac);
@@ -204,6 +228,8 @@ namespace Igre_ListaObjekata
         private System.Windows.Forms.TextBox txtNaziv;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvIgre;
+        private System.Windows.Forms.Button btnSpremi;
+        private System.Windows.Forms.Button btnUcitaj;
     }
 }
 
